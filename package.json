@@ -14,7 +14,8 @@
 		"styled-components": "5.1.1"
 	},
 	"scripts": {
-		"start": "nodemon server/index.js & react-scripts start",
+		"start": "node server/index.js & react-scripts start",
+		"start-nm": "nodemon server/index.js & react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
