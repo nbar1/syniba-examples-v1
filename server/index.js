@@ -33,9 +33,15 @@ app.use(function (req, res, next) {
 /**
  * Load routes
  */
-var routeIndex = require('./routes/index.js');
+var routesAuth = require('./routes/auth.js');
+var routesAccount = require('./routes/account.js');
+var routesNotifications = require('./routes/notifications.js');
+var routesDashboard = require('./routes/dashboard.js');
 
-app.use('/api/v1', routeIndex);
+app.use('/api/v1/auth', routesAuth);
+app.use('/api/v1/account', routesAccount);
+app.use('/api/v1/notifications', routesNotifications);
+app.use('/api/v1/dashboard', routesDashboard);
 
 /**
  * Start server
